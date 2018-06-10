@@ -1,9 +1,11 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
         <head>
+                <nav class="navbar navbar-light bg-light">
+                        <span class="navbar-brand mb-0 h1">Portfolio</span>
+                      </nav>
                 <title>
-                    <h1>>Portfolio<h1>
+                    <h1>About me<h1>
                 </title>
                 <style>
                         body {background-color: #4aaaa5};
@@ -19,10 +21,25 @@
                         #container { width: 960px};
                         #pagebody-inner {margin-left: 960px; margin-right: 960px};
                     
-                    
+                        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+
+// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
+.custom-class {
+  display: none;
+}
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+}
                         </style>
         </head>
 <body>
+
     <ul>
     <img src="img_1605.JPG" alt="1">
     <img src="img_3102.JPG" alt="2">
@@ -37,6 +54,4 @@
 </body>
 <footer></footer>
 </html>
-=======
 
->>>>>>> 15dddf23cd15611a3e88257890ea7bdec7699b37
