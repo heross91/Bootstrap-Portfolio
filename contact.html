@@ -18,23 +18,12 @@
                 h1{font-family: Arial, Helvetica, sans-serif};
                 #container { width: 960px};
                 #pagebody-inner {margin-left: 960px; margin-right: 960px};
-                // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
-@include media-breakpoint-up(sm) { ... }
-@include media-breakpoint-up(md) { ... }
-@include media-breakpoint-up(lg) { ... }
-@include media-breakpoint-up(xl) { ... }
-
-// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
-.custom-class {
-  display: none;
-}
-@include media-breakpoint-up(sm) {
-  .custom-class {
-    display: block;
-  }
-}
+                
             
                 </style>
+                <div class="container-fluid">
+                        @media (min-width: 960px) and (max-width: 960px);
+                </div>
     </head>
     <body>
 <form>
